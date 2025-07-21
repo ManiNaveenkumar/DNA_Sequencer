@@ -1,0 +1,4 @@
+read_verilog dnasequencer.v
+synth -top dnasequencer
+write_json netlist.json     # OR write_verilog netlist.v
+show -format svg -prefix fsm_graph
